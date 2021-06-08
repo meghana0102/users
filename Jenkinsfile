@@ -1,7 +1,7 @@
 
    pipeline{
     agent {
-        label 'NODEJS'
+        label 'JAVA'
     }
     stages {
         stage('Compile Code') {
