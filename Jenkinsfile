@@ -1,4 +1,4 @@
-users(jenkinsfile)
+
    pipeline{
     agent {
         label 'NODEJS'
