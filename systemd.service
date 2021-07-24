@@ -1,8 +1,12 @@
 [Unit]
-Description=User Service
+Description=user service
+
 [Service]
-ExecStart=java -jar /root/shellscripting/Todo/users/target/users-api-0.0.1.jar
-Environment=SERVER_PORT=8080
-SyslogIdentifier=users
+
+Environment=AUTH_API_PORT=8080
+ExecStart=/bin/java -jar /home/ubuntu/users/users.jar 
+
+SyslogIdentifier=user
+
 [Install]
 WantedBy=multi-user.target
